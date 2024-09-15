@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Réseaux Sociaux avec Musique</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        /* Vidéo en arrière-plan */
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Met la vidéo en arrière-plan */
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour rendre le texte lisible */
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            z-index: 1; /* Assure que le conteneur est au-dessus de la vidéo */
+        }
+
+        h1 {
+            color: #1000f7;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid white;
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .social-links li {
+            margin: 20px 0;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5em;
+            background-color: #444;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #ff4757;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #aaa;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Vidéo en arrière-plan -->
+    <video autoplay muted loop playsinline>
+        <source src="6ix9ine - WASSUP (Official Music Video).mp4" type="video/mp4">
+        Votre navigateur ne supporte pas l'élément vidéo.
+    </video>
+
+    <!-- Conteneur principal -->
+    <div class="container">
+        <!-- Image de profil -->
+        <img src="919a0ea2d6cecc4e2813d4478032e7c8.jpg" alt="Photo de profil" class="profile-pic">
+        
+        <!-- Pseudo -->
+        <h1>Z3ARB</h1>
+
+        <!-- Liens vers les réseaux sociaux -->
+        <ul class="social-links">
+            <li><a href="https://x.com/TOXIQUE_SATO" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com/303.lf/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.youtube.com/@toxicsato" target="_blank">YouTube</a></li>
+            <li><a href="https://www.twitch.tv/sato_html" target="_blank">Twitch</a></li>
+        </ul>
+        
+        <footer>© 2024 created by SATO.</footer>
+    </div>
+
+    <!-- Audio en arrière-plan avec l'attribut playsinline -->
+    <audio autoplay loop playsinline>
+        <source src="6ix9ine - WASSUP.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'élément audio.
+    </audio>
+
+</body>
+</html>
